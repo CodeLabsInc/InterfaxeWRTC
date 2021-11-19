@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		5C8406DB2BC71D33DBF71FC1 /* Pods_IntrfaxeWRTC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA49EFB90626BFF7775E544 /* Pods_IntrfaxeWRTC_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		91AE22DE27476E0300652259 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D127476E0200652259 /* TestViewController.swift */; };
+		91AE22DF27476E0300652259 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D227476E0200652259 /* CollectionViewCell.swift */; };
+		91AE22E027476E0300652259 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D427476E0200652259 /* Utility.swift */; };
+		91AE22E127476E0300652259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D527476E0200652259 /* ViewController.swift */; };
+		91AE22E227476E0300652259 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D627476E0200652259 /* Extension.swift */; };
+		91AE22E327476E0300652259 /* RemoteViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D827476E0200652259 /* RemoteViews.swift */; };
+		91AE22E427476E0300652259 /* GridCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D927476E0200652259 /* GridCollectionViewLayout.swift */; };
+		91AE22E527476E0300652259 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22DA27476E0200652259 /* FirstViewController.swift */; };
+		91AE22E627476E0300652259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91AE22DB27476E0200652259 /* Main.storyboard */; };
+		91AE22E727476E0300652259 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22DC27476E0300652259 /* CollectionReusableView.swift */; };
+		91AE22E827476E0300652259 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91AE22DD27476E0300652259 /* Images.xcassets */; };
 		D41E249F549167D4EC8782E8 /* Pods_IntrfaxeWRTC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19F8A3475C5BE1FE79E5440 /* Pods_IntrfaxeWRTC_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,20 +41,28 @@
 		607FACD01AFB9204008FA782 /* IntrfaxeWRTC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntrfaxeWRTC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* IntrfaxeWRTC_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntrfaxeWRTC_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		848731D3CBAB07952665DAC3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		8E4365F435986EBCAFAB809D /* IntrfaxeWRTC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = IntrfaxeWRTC.podspec; path = ../IntrfaxeWRTC.podspec; sourceTree = "<group>"; };
+		848731D3CBAB07952665DAC3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8E4365F435986EBCAFAB809D /* IntrfaxeWRTC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IntrfaxeWRTC.podspec; path = ../IntrfaxeWRTC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		91AE22D127476E0200652259 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		91AE22D227476E0200652259 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		91AE22D427476E0200652259 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		91AE22D527476E0200652259 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../Framework/CLWebRTC/Example/CLWebRTC/ViewController.swift; sourceTree = "<group>"; };
+		91AE22D627476E0200652259 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		91AE22D827476E0200652259 /* RemoteViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteViews.swift; sourceTree = "<group>"; };
+		91AE22D927476E0200652259 /* GridCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCollectionViewLayout.swift; sourceTree = "<group>"; };
+		91AE22DA27476E0200652259 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		91AE22DB27476E0200652259 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		91AE22DC27476E0300652259 /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		91AE22DD27476E0300652259 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../../Framework/CLWebRTC/Example/CLWebRTC/Images.xcassets; sourceTree = "<group>"; };
 		9CA49EFB90626BFF7775E544 /* Pods_IntrfaxeWRTC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntrfaxeWRTC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B63B8AF862BECF717077D2 /* Pods-IntrfaxeWRTC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntrfaxeWRTC_Tests.release.xcconfig"; path = "Target Support Files/Pods-IntrfaxeWRTC_Tests/Pods-IntrfaxeWRTC_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BFB433CB95B052E5DD3905CF /* Pods-IntrfaxeWRTC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntrfaxeWRTC_Example.debug.xcconfig"; path = "Target Support Files/Pods-IntrfaxeWRTC_Example/Pods-IntrfaxeWRTC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C19F8A3475C5BE1FE79E5440 /* Pods_IntrfaxeWRTC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntrfaxeWRTC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F220F4E6563E453B697EB1DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F220F4E6563E453B697EB1DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +109,18 @@
 		607FACD21AFB9204008FA782 /* Example for IntrfaxeWRTC */ = {
 			isa = PBXGroup;
 			children = (
+				91AE22DC27476E0300652259 /* CollectionReusableView.swift */,
+				91AE22D227476E0200652259 /* CollectionViewCell.swift */,
+				91AE22D627476E0200652259 /* Extension.swift */,
+				91AE22DA27476E0200652259 /* FirstViewController.swift */,
+				91AE22D927476E0200652259 /* GridCollectionViewLayout.swift */,
+				91AE22D327476E0200652259 /* Helpers */,
+				91AE22DD27476E0300652259 /* Images.xcassets */,
+				91AE22DB27476E0200652259 /* Main.storyboard */,
+				91AE22D727476E0200652259 /* Models */,
+				91AE22D127476E0200652259 /* TestViewController.swift */,
+				91AE22D527476E0200652259 /* ViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -148,6 +172,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		91AE22D327476E0200652259 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				91AE22D427476E0200652259 /* Utility.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		91AE22D727476E0200652259 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91AE22D827476E0200652259 /* RemoteViews.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		968CD87C6BACAE12970BE810 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +196,6 @@
 				36B24AD3ECBA146C294372EF /* Pods-IntrfaxeWRTC_Tests.debug.xcconfig */,
 				B1B63B8AF862BECF717077D2 /* Pods-IntrfaxeWRTC_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +252,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TV2FDL7J4S;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TV2FDL7J4S;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +268,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -246,9 +288,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				91AE22E827476E0300652259 /* Images.xcassets in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				91AE22E627476E0300652259 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,10 +312,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IntrfaxeWRTC_Example/Pods-IntrfaxeWRTC_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IntrfaxeWRTC/IntrfaxeWRTC.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${PODS_ROOT}/WebRTC/WebRTC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IntrfaxeWRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -331,7 +379,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				91AE22E127476E0300652259 /* ViewController.swift in Sources */,
+				91AE22E727476E0300652259 /* CollectionReusableView.swift in Sources */,
+				91AE22E427476E0300652259 /* GridCollectionViewLayout.swift in Sources */,
+				91AE22E027476E0300652259 /* Utility.swift in Sources */,
+				91AE22E227476E0300652259 /* Extension.swift in Sources */,
+				91AE22E527476E0300652259 /* FirstViewController.swift in Sources */,
+				91AE22DE27476E0300652259 /* TestViewController.swift in Sources */,
+				91AE22DF27476E0300652259 /* CollectionViewCell.swift in Sources */,
+				91AE22E327476E0300652259 /* RemoteViews.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,14 +411,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -419,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +513,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -478,6 +526,8 @@
 			baseConfigurationReference = BFB433CB95B052E5DD3905CF /* Pods-IntrfaxeWRTC_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TV2FDL7J4S;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IntrfaxeWRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +543,8 @@
 			baseConfigurationReference = 58BBBD395A34467AFAF3DA02 /* Pods-IntrfaxeWRTC_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TV2FDL7J4S;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IntrfaxeWRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -507,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36B24AD3ECBA146C294372EF /* Pods-IntrfaxeWRTC_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TV2FDL7J4S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1B63B8AF862BECF717077D2 /* Pods-IntrfaxeWRTC_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TV2FDL7J4S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
