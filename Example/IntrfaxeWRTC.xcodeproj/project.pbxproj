@@ -14,14 +14,14 @@
 		91AE22DE27476E0300652259 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D127476E0200652259 /* TestViewController.swift */; };
 		91AE22DF27476E0300652259 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D227476E0200652259 /* CollectionViewCell.swift */; };
 		91AE22E027476E0300652259 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D427476E0200652259 /* Utility.swift */; };
-		91AE22E127476E0300652259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D527476E0200652259 /* ViewController.swift */; };
 		91AE22E227476E0300652259 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D627476E0200652259 /* Extension.swift */; };
 		91AE22E327476E0300652259 /* RemoteViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D827476E0200652259 /* RemoteViews.swift */; };
 		91AE22E427476E0300652259 /* GridCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22D927476E0200652259 /* GridCollectionViewLayout.swift */; };
 		91AE22E527476E0300652259 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22DA27476E0200652259 /* FirstViewController.swift */; };
 		91AE22E627476E0300652259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91AE22DB27476E0200652259 /* Main.storyboard */; };
 		91AE22E727476E0300652259 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22DC27476E0300652259 /* CollectionReusableView.swift */; };
-		91AE22E827476E0300652259 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91AE22DD27476E0300652259 /* Images.xcassets */; };
+		91AE22EA2747BB8B00652259 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91AE22E92747BB8B00652259 /* Images.xcassets */; };
+		91AE22EC2747BE1700652259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE22EB2747BE1700652259 /* ViewController.swift */; };
 		D41E249F549167D4EC8782E8 /* Pods_IntrfaxeWRTC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19F8A3475C5BE1FE79E5440 /* Pods_IntrfaxeWRTC_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,14 +50,14 @@
 		91AE22D127476E0200652259 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		91AE22D227476E0200652259 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		91AE22D427476E0200652259 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		91AE22D527476E0200652259 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../Framework/CLWebRTC/Example/CLWebRTC/ViewController.swift; sourceTree = "<group>"; };
 		91AE22D627476E0200652259 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		91AE22D827476E0200652259 /* RemoteViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteViews.swift; sourceTree = "<group>"; };
 		91AE22D927476E0200652259 /* GridCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCollectionViewLayout.swift; sourceTree = "<group>"; };
 		91AE22DA27476E0200652259 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		91AE22DB27476E0200652259 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		91AE22DC27476E0300652259 /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
-		91AE22DD27476E0300652259 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../../Framework/CLWebRTC/Example/CLWebRTC/Images.xcassets; sourceTree = "<group>"; };
+		91AE22E92747BB8B00652259 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		91AE22EB2747BE1700652259 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CA49EFB90626BFF7775E544 /* Pods_IntrfaxeWRTC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntrfaxeWRTC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B63B8AF862BECF717077D2 /* Pods-IntrfaxeWRTC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntrfaxeWRTC_Tests.release.xcconfig"; path = "Target Support Files/Pods-IntrfaxeWRTC_Tests/Pods-IntrfaxeWRTC_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BFB433CB95B052E5DD3905CF /* Pods-IntrfaxeWRTC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntrfaxeWRTC_Example.debug.xcconfig"; path = "Target Support Files/Pods-IntrfaxeWRTC_Example/Pods-IntrfaxeWRTC_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,17 +109,17 @@
 		607FACD21AFB9204008FA782 /* Example for IntrfaxeWRTC */ = {
 			isa = PBXGroup;
 			children = (
+				91AE22EB2747BE1700652259 /* ViewController.swift */,
+				91AE22E92747BB8B00652259 /* Images.xcassets */,
 				91AE22DC27476E0300652259 /* CollectionReusableView.swift */,
 				91AE22D227476E0200652259 /* CollectionViewCell.swift */,
 				91AE22D627476E0200652259 /* Extension.swift */,
 				91AE22DA27476E0200652259 /* FirstViewController.swift */,
 				91AE22D927476E0200652259 /* GridCollectionViewLayout.swift */,
 				91AE22D327476E0200652259 /* Helpers */,
-				91AE22DD27476E0300652259 /* Images.xcassets */,
 				91AE22DB27476E0200652259 /* Main.storyboard */,
 				91AE22D727476E0200652259 /* Models */,
 				91AE22D127476E0200652259 /* TestViewController.swift */,
-				91AE22D527476E0200652259 /* ViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -288,7 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91AE22E827476E0300652259 /* Images.xcassets in Resources */,
+				91AE22EA2747BB8B00652259 /* Images.xcassets in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				91AE22E627476E0300652259 /* Main.storyboard in Resources */,
 			);
@@ -379,7 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91AE22E127476E0300652259 /* ViewController.swift in Sources */,
+				91AE22EC2747BE1700652259 /* ViewController.swift in Sources */,
 				91AE22E727476E0300652259 /* CollectionReusableView.swift in Sources */,
 				91AE22E427476E0300652259 /* GridCollectionViewLayout.swift in Sources */,
 				91AE22E027476E0300652259 /* Utility.swift in Sources */,
