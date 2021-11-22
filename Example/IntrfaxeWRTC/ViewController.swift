@@ -139,21 +139,19 @@
         
         
         
-        
-        var iceServers = [RTCIceServer]()
-        iceServers.append(RTCIceServer(urlStrings:["stun:stun.l.google.com:19302"]))
-        iceServers.append(RTCIceServer(urlStrings:["stun:stun.multi.net.pk:3478"]))
+//
+//        var iceServers = [RTCIceServer]()
+//        iceServers.append(RTCIceServer(urlStrings:["stun:stun.l.google.com:19302"]))
+//        iceServers.append(RTCIceServer(urlStrings:["stun:stun.multi.net.pk:3478"]))
         
         
         
         let myId = username
         
         rtcManager = RTCClient(videoCall: true)
-        rtcManager?.defaultIceServer = iceServers
- //        clientServer = RTCVideoServer(url: "wss://webrtc2.codelabs.inc:8989/janus", client: rtcManager!)
-        clientServer = RTCVideoServer(url: "wss://signalkhi.codelabs.inc:8989/janus", client: rtcManager!)
-        //        clientServer = RTCVideoServer(url: "wss://web.codelabs.inc:8989/janus", client: rtcManager!)
-        
+//        rtcManager?.defaultIceServer = iceServers
+        clientServer = RTCVideoServer(url: "wss://signalkhi.codelabs.inc:8989/intrfaxe", client: rtcManager!)
+ 
         clientServer?.display = myId
         
         rtcOperator = WebRTCOperator(delegate: self,clSocket: clientServer!)

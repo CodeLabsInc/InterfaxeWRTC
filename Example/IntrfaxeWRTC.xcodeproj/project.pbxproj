@@ -58,6 +58,7 @@
 		91AE22DC27476E0300652259 /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
 		91AE22E92747BB8B00652259 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		91AE22EB2747BE1700652259 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91F18021274B85FE008E036A /* IntrfaxeWRTC_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IntrfaxeWRTC_Example.entitlements; sourceTree = "<group>"; };
 		9CA49EFB90626BFF7775E544 /* Pods_IntrfaxeWRTC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntrfaxeWRTC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B63B8AF862BECF717077D2 /* Pods-IntrfaxeWRTC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntrfaxeWRTC_Tests.release.xcconfig"; path = "Target Support Files/Pods-IntrfaxeWRTC_Tests/Pods-IntrfaxeWRTC_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BFB433CB95B052E5DD3905CF /* Pods-IntrfaxeWRTC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntrfaxeWRTC_Example.debug.xcconfig"; path = "Target Support Files/Pods-IntrfaxeWRTC_Example/Pods-IntrfaxeWRTC_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				91F18021274B85FE008E036A /* IntrfaxeWRTC_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for IntrfaxeWRTC */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -526,6 +528,7 @@
 			baseConfigurationReference = BFB433CB95B052E5DD3905CF /* Pods-IntrfaxeWRTC_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IntrfaxeWRTC_Example.entitlements;
 				DEVELOPMENT_TEAM = TV2FDL7J4S;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IntrfaxeWRTC/Info.plist;
@@ -543,6 +546,7 @@
 			baseConfigurationReference = 58BBBD395A34467AFAF3DA02 /* Pods-IntrfaxeWRTC_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IntrfaxeWRTC_Example.entitlements;
 				DEVELOPMENT_TEAM = TV2FDL7J4S;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IntrfaxeWRTC/Info.plist;

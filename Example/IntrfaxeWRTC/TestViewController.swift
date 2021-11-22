@@ -54,7 +54,7 @@ class TestViewController: UIViewController ,IntrfaxeRTCClientDelegate,RTCEAGLVid
         let myId = String(n)
         rtcManager = RTCClient(videoCall: true)
         rtcManager?.defaultIceServer = iceServers
-        clientServer = RTCVideoServer(url: "wss://webrtc2.codelabs.inc:8989/janus", client: rtcManager!)
+//        clientServer = RTCVideoServer(url: "wss://webrtc2.codelabs.inc:8989/intrfaxe", client: rtcManager!)
         clientServer?.display = myId
 //        clientServer?.initPublish = false
         rtcOperator = WebRTCOperator(delegate: self,clSocket: clientServer!)
