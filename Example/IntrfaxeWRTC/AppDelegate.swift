@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IntrfaxeWRTC
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        IntrfaxeWRTC.sharedInstance.accessKey = ""
+        IntrfaxeWRTC.sharedInstance.apiURL = "https://projects.codelabs.inc/webrtc/api/Rooms/CreateRoom"
+        
         return true
     }
 

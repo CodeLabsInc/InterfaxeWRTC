@@ -4,7 +4,7 @@
  import Starscream
  import WebRTC
  import IntrfaxeWRTC
- //import SnapKit
+ import SnapKit
  class ViewController: UIViewController ,IntrfaxeRTCClientDelegate{
     
     
@@ -198,6 +198,7 @@
         //        audioBtn.setImage(#imageLiteral(resourceName: "mute"), for: .normal)
         //        cameraSwapBtn.setImage(#imageLiteral(resourceName: "ic_cameraSwap"), for: .normal)
         
+        print("roomNameStr \(roomID)")
         print("roomNameStr \(roomNameStr)")
 
         

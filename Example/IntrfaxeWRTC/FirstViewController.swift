@@ -1,6 +1,7 @@
  
 
 import UIKit
+import IntrfaxeWRTC
 
 class FirstViewController: UIViewController, UITextFieldDelegate {
     
@@ -11,6 +12,10 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var connectBtn: UIButton!
+    
+    @IBOutlet weak var accessKeyTF: UITextField!
+    
+    
     
     var roomID = ""
     var roomName = ""
@@ -33,7 +38,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         
         roomTextField.delegate = self
         usernameTextField.delegate = self
-        
+        accessKeyTF.delegate = self
+
         
         
         //Looks for single or multiple taps.
@@ -58,9 +64,12 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
             joinRoom = true
         }
         
-        
-        
-        selector.isHidden = true
+        selector.isHidden = false
+    
+        accessKeyTF.text = UserDefaults.standard.string(forKey: "accessKey")
+        NotificationCenter.default.addObserver(self, selector: #selector(FirstViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+          NotificationCenter.default.addObserver(self, selector: #selector(FirstViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+
         
     }
     
@@ -78,6 +87,21 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         // Don't forget to reset when view is being removed
         AppUtility.lockOrientation(.all)
     }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height - 200
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
     
     //Calls this function when the tap is recognized.
     @objc func dismissKeyboard() {
@@ -135,6 +159,23 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         
         
         
+        if  accessKeyTF.text?.count ?? 0 <= 0 {
+            
+            let alert = UIAlertView()
+            alert.title = "Alert!"
+            alert.message = "Access Key is mandatory."
+            alert.addButton(withTitle: "Ok")
+            alert.show()
+            
+            
+            
+            return
+        }
+        
+        IntrfaxeWRTC.sharedInstance.accessKey = accessKeyTF.text ?? ""
+        UserDefaults.standard.set(IntrfaxeWRTC.sharedInstance.accessKey, forKey: "accessKey") //Bool
+
+        
         if currentReachabilityStatus == .notReachable {
             // Network Unavailable
             
@@ -147,7 +188,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
             
         } else {
             // Network Available
-            if roomTextField.text?.count ?? 0 > 0 {
+            if roomTextField.text?.count ?? 0 > 0  {
                 
                 print("****Function: \(#function), line: \(#line)****\n-- ")
                 let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ViewController") as? ViewController
@@ -176,6 +217,10 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
                
                 
             } else {
+                
+                
+                
+                
                 let alert = UIAlertView()
                 alert.title = "Alert!"
                 alert.message = "Room ID is mandatory."
@@ -196,12 +241,12 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
 }
 
 
-
-extension FirstViewController{
-    
-    
-    
-    
-    
-    
+extension FirstViewController: UITextViewDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        if textField == usernameTextField {
+            textField.resignFirstResponder()
+//        }
+        return true
+    }
 }
+ 
