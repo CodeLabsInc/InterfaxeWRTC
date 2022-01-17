@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         IntrfaxeWRTC.sharedInstance.accessKey = ""
-        IntrfaxeWRTC.sharedInstance.apiURL = "https://projects.codelabs.inc/webrtc/api/Rooms/CreateRoom"
+        IntrfaxeWRTC.sharedInstance.apiURL = "https://cms.intrfaxe.com/api/Rooms/CreateRoom"
         
         return true
     }
